@@ -20,7 +20,7 @@ SELECT article, CONCAT(color, ' ', size) as short_title FROM shirt_table
 ORDER BY article DESC;
  
 SELECT last_worn AS update_day,
-    COUNT(*) AS '# of books',
-    AVG(last_worn) AS 'avg pages'
+    COUNT(*) AS '# of shirt_table',
+    AVG(last_worn) AS 'avg last_worn'
 FROM shirt_table
     GROUP BY last_worn;
